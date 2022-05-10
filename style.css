@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+:root{
+    --font-family-Barlow: 'Barlow', sans-serif; 
+    --font-family-fraunces: 'Fraunces', sans-serif;;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerContainer{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.navContainer{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.logo{
+    background-image: url(/images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    background-position: center;
+}
+.fraunces{
+    font-family: var(--font-family-fraunces);
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0 30px 0 0;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu .selected{
+    color: black;
+}
+
+.menu li:nth-child(1), .menu li:nth-child(2), .menu li:nth-child(3){
+    font-family: var(--font-family-Barlow);
+}
+.menu button:nth-child(4){
+    background-color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-family: var(--font-family-fraunces);
+    font-size: 18px;
+    cursor: pointer;
+}
+.menu button:nth-child(4):hover{
+    color: hsl(0, 0%, 100%);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.logo, .menu{
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+}
+.main h1{
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: var(--font-family-fraunces);
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gridContainer p, .clients p, .more a{
+    font-family: var(--font-family-Barlow);
+}
+.gridItem{
+    height: 75vh;
+}
+.gridItem:nth-child(1), .gridItem:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 50px;
+}
+.gridItem:nth-child(1) h2, .gridItem:nth-child(4) h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+.gridItem:nth-child(1) p, .gridItem:nth-child(4) p{
+    margin-bottom: 30px;
+    max-width: 80%;
+}
+.gridItem:nth-child(1) a, .gridItem:nth-child(4) a{
+    color: black;
+    max-width: 80%;
+}
+.gridItem:nth-child(5) p, .gridItem:nth-child(6) p{
+    max-width: 80%;
+    margin-bottom: 120px;
+}
+.gridItem:nth-child(1) a{
+    text-decoration: underline 3px hsl(51, 100%, 49%);
+}
+.gridItem:nth-child(4) a{
+    text-decoration: underline 3px hsl(7, 99%, 70%);
+}
+.gridItem:nth-child(2){
+    background-image: url(/images/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gridItem:nth-child(3){
+    background-image: url(/images/desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gridItem:nth-child(5){
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align:center;
+}
+.gridItem:nth-child(6){
+    background-image: url(/images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align:center;
+}
+.clientsContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 70px 30px;
+
+}
+.client{
+    text-align: center;
+    background-color: red;
+    margin: 0 10px;
+}
+.client img{
+    width: 80px;
+    border-radius: 50%;
+}
+.contactContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr), auto;
+}
+.contactImg{
+    height: 50vh;
+}
+.contactImg:nth-child(1){
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.contactImg:nth-child(2){
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.contactImg:nth-child(3){
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.contactImg:nth-child(4){
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.contactLinks{
+    background-color: hsl(168, 45%, 58%);
+    height: 50vh;
+    grid-column: 1 / span 4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linksContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    height: 70%;
+    top: 10%;
+
+}
+.logoFooter{
+    background-image: url(/images/logoFooter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 40px;
+    background-position: center;
+
+}
+.more a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+}
+.network{
+    padding: 0 auto;
+}
+
+
+
+.atributte{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .headerContainer{
+        width: 100%;
+        background-image: url(/images/mobile/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .menu{
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 90px;
+        right: 10px;
+        display: none;
+        height: 50%;
+        width: 80%;
+        background-color: #fff;
+        z-index: 1;
+    }
+    .menuOpen{
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 90px;
+        right: 10px;
+        display: flex;
+        height: 50%;
+        width: 80%;
+        background-color: #fff;
+        z-index: 1;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+    }
+    .menu li{
+        padding: 10px 0;
+    }
+    .balon{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+        top: -20px;
+        right: 0px;
+        border-left: 20px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 35px solid #fff;
+        transform: rotate(-90deg);
+
+    }
+
+    .menu button:nth-child(4){
+        background-color: yellow;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-family: var(--font-family-fraunces);
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .menu button:nth-child(4):hover{
+        background-color: yellow;
+        border: none;
+        color: #000;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-family: var(--font-family-fraunces);
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .gridContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gridItem:nth-child(1){
+        grid-row: 2 / 3;
+    }
+    .gridItem:nth-child(2){
+        background-image: url(/images/mobile/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        grid-row: 1/2;
+    }
+    .gridItem:nth-child(3){
+        background-image: url(/images/desktop/image-stand-out.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .gridItem:nth-child(5){
+        background-image: url(/images/desktop/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .gridItem:nth-child(6){
+        background-image: url(/images/desktop/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .clientsContainer{
+        height: 100%;
+        padding: 50px 0;
+    }
+
+    .clients{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1200px;
+    }
+    .contactContainer{
+        grid-template-columns: repeat(2, 1fr), repeat(2, 1fr);
+    }
+    .contactImg{
+        max-height: 50vh;
+        min-height: 160px;
+    }
+    .contactImg:nth-child(1){
+        background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .contactImg:nth-child(2){
+        background-image: url(/images/mobile/image-gallery-orange.jpg);
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .contactImg:nth-child(3){
+        background-image: url(/images/mobile/image-gallery-cone.jpg);
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .contactImg:nth-child(4){
+        background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    .hamburger{
+        display: block;
+        background-image: url(/images/icon-hamburger.svg);
+        width: 40px;
+        height: 25px;
+        position: fixed;
+        top: 40px;
+        right: 40px;
+    }
+}
